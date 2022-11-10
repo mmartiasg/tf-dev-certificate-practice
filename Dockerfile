@@ -1,4 +1,7 @@
-FROM debian
+FROM debian AS builder
+
+FROM builder as dev-envs
+
 RUN apt update
 RUN apt install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
 RUN wget https://www.python.org/ftp/python/3.10.8/Python-3.10.8.tgz
