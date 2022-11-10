@@ -6,6 +6,7 @@ RUN tar xzf Python-3.10.8.tgz
 WORKDIR Python-3.10.8
 RUN ./configure --enable-optimizations
 RUN make install
+WORKDIR /
 RUN python3 --version
 RUN python3 -m ensurepip --upgrade
 RUN python3 -m pip install --upgrade pip
