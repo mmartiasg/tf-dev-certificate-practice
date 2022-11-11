@@ -1,6 +1,0 @@
-services:
-  tensorflowbackend:
-    build:
-      context: .
-      target: builder
-    container_name: notebooks_tensorflow
