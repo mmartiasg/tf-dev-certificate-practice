@@ -10,4 +10,4 @@ WORKDIR /
 RUN python3 --version
 RUN python3 -m ensurepip --upgrade
 RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install numpy pandas tensorflow jupyter notebook nbconvert ipykernel tqdm
+RUN python3 -m pip install numpy pandas tensorflow jupyter notebook nbconvert ipykernel tqdm matplotlib
